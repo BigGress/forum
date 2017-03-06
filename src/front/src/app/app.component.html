@@ -1,0 +1,20 @@
+<!--<h1>
+  {{title}}
+</h1>
+<button (click)="getData()">test</button>
+<a routerLink="/forum">forum</a>-->
+<md-sidenav-container>
+  <md-sidenav #historyside>
+    haha
+  </md-sidenav>
+
+  <md-toolbar color="primary" class="mat-elevation-z6 nav-top">
+    <button md-button (click)="historyside.open()"
+            [class.active]="historyside.opened">logo</button>
+    <button routerLink="/forum" routerLinkActive md-button #forum="routerLinkActive"
+            [class.active]="forum.isActive && !historyside.opened ? 'active' : ''">论坛</button>
+  </md-toolbar>
+  <div class="view">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

@@ -1,0 +1,21 @@
+@import '~@angular/material/core/theming/theming';
+@import '~@angular/material/core/theming/palette';
+
+
+.view {
+  padding: 16px;
+}
+
+.active {
+  background-color: mat-color($mat-yellow, 50);
+  color: mat-color($mat-blue, 500);
+}
+
+.nav-top {
+  min-height: 50px;
+  height: 50px;
+
+  button {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,27 @@
+<md-card>
+  <!--<md-card-title class="list-title">
+    <md-toolbar>
+      <h3 md-subheader>论坛</h3>
+    </md-toolbar>
+  </md-card-title>-->
+  <md-card-content>
+    <md-tab-group dynamicHeight>
+      <md-tab label="最新">
+        <md-list>
+          <md-list-item *ngFor="let item of (forums | async)"
+                        (click)="get(item)">
+            <h3 md-line>{{ item.title }}</h3>
+            <p md-line>{{ item.content }}</p>
+          </md-list-item>
+        </md-list>
+        <!--<template>
+        </template>-->
+      </md-tab>
+      <md-tab label="热门">
+        热门
+        <!--<template>
+        </template>-->
+      </md-tab>
+    </md-tab-group>
+  </md-card-content>
+</md-card>

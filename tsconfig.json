@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "baseUrl": ".",
+        "rootDir": "./src",
+        "lib": [
+            "es6"
+        ],
+        "types": [
+            "node",
+            "redis",
+            "koa"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "files": [
+        "lib/back/index.ts"
+    ],
+    "exclude": [
+        "node_module"
+    ],
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}]
+}
